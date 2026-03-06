@@ -4,8 +4,8 @@
   "description": "Full-stack Job Scraper Platform - Single Deployment",
   "main": "server/server.js",
   "engines": {
-    "node": "18.x",
-    "npm": "9.x"
+    "node": "^20.0.0 || >=20",
+    "npm": "^9 || >=9"
   },
   "scripts": {
     "install-all": "npm install && cd client && npm install && cd ../server && npm install",
