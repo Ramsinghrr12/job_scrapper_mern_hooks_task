@@ -11,11 +11,12 @@
     "install-all": "npm install && cd client && npm install && cd ../server && npm install",
     "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
     "build": "cd client && npm run build",
-    "start": "cd server && npm start",
-    "server": "cd server && npm start",
+    "start": "node server/server.js",
+    "server": "node server/server.js",
     "client": "cd client && npm run dev",
+    "build-all": "npm install && cd client && npm install && npm run build && cd .. && cd server && npm install",
     "render-build": "npm install && cd client && npm install && npm run build",
-    "render-start": "cd server && npm start"
+    "render-start": "node server/server.js"
   },
   "keywords": [
     "job-scraper",
