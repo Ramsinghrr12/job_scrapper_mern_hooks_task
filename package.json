@@ -1,0 +1,32 @@
+{
+  "name": "job-scraper-platform",
+  "version": "1.0.0",
+  "description": "Full-stack Job Scraper Platform - Single Deployment",
+  "main": "server/server.js",
+  "engines": {
+    "node": "18.x",
+    "npm": "9.x"
+  },
+  "scripts": {
+    "install-all": "npm install && cd client && npm install && cd ../server && npm install",
+    "dev": "concurrently \"cd server && npm run dev\" \"cd client && npm run dev\"",
+    "build": "cd client && npm run build",
+    "start": "cd server && npm start",
+    "server": "cd server && npm start",
+    "client": "cd client && npm run dev",
+    "render-build": "npm install && cd client && npm install && npm run build",
+    "render-start": "cd server && npm start"
+  },
+  "keywords": [
+    "job-scraper",
+    "mern",
+    "react",
+    "express",
+    "mongodb"
+  ],
+  "author": "Your Name",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.1"
+  }
+}
