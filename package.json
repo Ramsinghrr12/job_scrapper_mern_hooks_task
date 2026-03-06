@@ -14,7 +14,7 @@
     "start": "node server/server.js",
     "server": "node server/server.js",
     "client": "cd client && npm run dev",
-    "build-all": "npm install && cd client && npm install && npm run build && cd .. && cd server && npm install",
+    "build-all": "npm install && cd server && npm install && cd ../client && npm install && npm run build",
     "render-build": "npm install && cd client && npm install && npm run build",
     "render-start": "node server/server.js"
   },
